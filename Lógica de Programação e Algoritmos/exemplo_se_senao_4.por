@@ -1,0 +1,33 @@
+programa {
+  funcao inicio() {
+    cadeia operacao
+    inteiro num1, num2
+    real resultado
+
+    escreva("Digite a operação (+,-,/,*): ")
+    leia(operacao)
+
+    escreva("Digite o primeiro número: ")
+    leia(num1)
+
+    escreva("Digite o segundo número: ")
+    leia(num2)
+
+    se(operacao == "+"){
+      resultado = num1 + num2
+    }
+    senao se(operacao == "-"){
+      resultado = num1 - num2
+    }
+    senao se(operacao == "/"){
+      resultado = num1 / num2
+    }
+    senao se(operacao == "*"){
+      resultado = num1 * num2
+    }
+    senao{
+      escreva("Operação inválida")
+    }
+    escreva("O resultado é: ", resultado)
+  }
+}
